@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 
 const client = new Discord.Client();
 
+const config = require("./config.json");
 
 client.on("ready", () => {
 
@@ -32,5 +33,4 @@ client.on("message", async message => {
 }
 });
 
-
-client.login('NjczNTM3MTQ3MjE4OTUyMjEz.XjbtLA.tTX8XajIBv61tANTw-NuIZfYU9Y');
+client.login(config.token);
